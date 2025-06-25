@@ -21,7 +21,7 @@ from tensorflow.keras import optimizers
 file_path = '/home/adekkers'
 df = pd.read_csv(f'{file_path}/all_data.csv')
 
-features = ['piek','p_APX', 'kWh_real_zon', 'kWh_nom_zon', 'p_sur', 'p_shor', 'eur_tot_zon', 'Uur', 'ISP', 'maand', 'DagM', 'jaar', 'Imbalance']
+features = ['piek','p_APX', 'kWh_real_zon', 'kWh_nom_zon', 'kWh_sur_zon', 'kWh_shor_zon', 'p_sur', 'p_shor', 'eur_tot_zon', 'eur_APX_zon', 'eur_sur_zon', 'eur_shor_zon', 'Uur', 'ISP', 'maand', 'DagM', 'jaar', 'Imbalance', 'Surplus', 'Shortage', 'Absolute']
 target = 'Imbalance'
 
 # input & labels aanmaken
